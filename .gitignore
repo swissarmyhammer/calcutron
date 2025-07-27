@@ -1,0 +1,12 @@
+# System files
+.DS_Store
+
+# Rust build artifacts
+target
+Cargo.lock
+
+# Tool specific
+.swissarmyhammer/runs
+.swissarmyhammer/mcp.log
+*.log
+
