@@ -7,7 +7,7 @@ To get started you need:
 - To fork this repo
 - Install Claude Code https://docs.anthropic.com/en/docs/claude-code/setup
 - Install Swissarmyhammer <https://github.com/swissarmyhammer/swissarmyhammer>
-  - `cargo install --git <https://github.com/swissarmyhammer/swissarmyhammer.git> swissarmyhammer-cli --force`
+  - `cargo install --git https://github.com/swissarmyhammer/swissarmyhammer.git swissarmyhammer-cli --force`
 
 ## The Specification
 
