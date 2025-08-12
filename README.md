@@ -25,11 +25,19 @@ Feel free to change it. Really.
 Now -- in your shell:
 
 ### Preflight 📋 
+
+Let's get this sample repo started.
+
 ```bash
+git clone git@github.com:swissarmyhammer/calcutron.git
+cd calcutron
 sah doctor
 ```
 
 ### Flightplan 🗺️
+
+Planning will look at all the markdown files in ./specification, digest those, and generate issues. Let it rip.
+
 ```bash
 sah flow run plan
 ```
@@ -42,6 +50,10 @@ git commit -am 'plan'
 ```
 
 ### Takeoff 🛫
+
+Implement will turn your issues into code, coding, reviewing, testing. And repeating until it is done.
+
+Expect a few hours for calcutron. It's faster than you could do it by hand :)
 
 ```bash
 sah flow run implement
