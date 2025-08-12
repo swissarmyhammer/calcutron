@@ -20,8 +20,16 @@ You can use 'just words', use cases, code snippets -- go nuts.
 
 Feel free to change it. Really.
 
-## TLDR...
+## Let's Go!
 
+Now -- in your shell:
+
+### Preflight 📋 
+```bash
+sah doctor
+```
+
+### Flightplan 🗺️
 ```bash
 sah flow run plan
 ```
@@ -33,7 +41,7 @@ git add issues
 git commit -am 'plan'
 ```
 
-Bask in the glory.
+### Takeoff   
 
 ```bash
 sah flow run implement
