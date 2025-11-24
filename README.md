@@ -36,11 +36,10 @@ sah doctor
 
 ### Flightplan 🗺️
 
-Planning will look at all the markdown files in ./specification, digest those, and generate issues. Let it rip.
+Planning will look at a markdown file, digest it, and generate issues. Let it rip.
 
 ```bash
 sah plan ./specification/index.md
-```
 
 This will create a plan-- a bunch of issue -- go ahead and commit these
 
