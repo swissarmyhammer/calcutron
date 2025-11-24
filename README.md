@@ -39,7 +39,7 @@ sah doctor
 Planning will look at all the markdown files in ./specification, digest those, and generate issues. Let it rip.
 
 ```bash
-sah flow run plan
+sah plan ./specification/index.md
 ```
 
 This will create a plan-- a bunch of issue -- go ahead and commit these
@@ -56,7 +56,7 @@ Implement will turn your issues into code, coding, reviewing, testing. And repea
 Expect a few hours for calcutron. It's faster than you could do it by hand :)
 
 ```bash
-sah flow run implement
+sah implement
 ```
 
 Tremble in AI fear...
