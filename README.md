@@ -22,7 +22,7 @@ Feel free to change it. Really.
 
 Now -- in your shell:
 
-### Preflight 📋 
+### Init  
 
 Let's get this sample repo started.
 
@@ -33,7 +33,7 @@ sah init
 sah doctor
 ```
 
-### Flightplan 🗺️
+### Action 
 
 Planning will look at a markdown file, digest it, and generate issues. Fire up Claude Code
 
@@ -57,15 +57,6 @@ Planning will look at a markdown file, digest it, and generate issues. Fire up C
 
 ```
 
-### Takeoff 🛫
-
-Implement will turn your issues into code, coding, reviewing, testing. And repeating until it is done.
-
-Expect a few hours for calcutron. It's faster than you could do it by hand :)
-
-```bash
-sah implement
-```
 
 Tremble in AI fear...
 
