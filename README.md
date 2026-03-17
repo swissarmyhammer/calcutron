@@ -6,9 +6,7 @@ To get started you need:
 
 - To fork this repo
 - Install Claude Code https://docs.anthropic.com/en/docs/claude-code/setup
-- Install Swissarmyhammer <https://github.com/swissarmyhammer/swissarmyhammer>
-  - `cargo install --git https://github.com/swissarmyhammer/swissarmyhammer.git swissarmyhammer-cli --force
-- Hook up as MCP `claude mcp add sah sah serve`
+- Install Swissarmyhammer https://github.com/swissarmyhammer/swissarmyhammer
 
 ## The Specification
 
@@ -31,21 +29,32 @@ Let's get this sample repo started.
 ```bash
 git clone git@github.com:swissarmyhammer/calcutron.git
 cd calcutron
+sah init
 sah doctor
 ```
 
 ### Flightplan 🗺️
 
-Planning will look at a markdown file, digest it, and generate issues. Let it rip.
+Planning will look at a markdown file, digest it, and generate issues. Fire up Claude Code
 
 ```bash
-sah plan ./specification/index.md
+-- This will create a plan-- a bunch of cards and use claude code planning mode
 
-This will create a plan-- a bunch of issue -- go ahead and commit these
+/plan ./specification/index.md
 
-```bash
-git add issues
-git commit -am 'plan'
+-- do the work
+/implement-loop
+
+-- check it
+/review
+
+-- do the work
+/implement-loop
+
+
+-- make sure all test pass
+/test-loop
+
 ```
 
 ### Takeoff 🛫
