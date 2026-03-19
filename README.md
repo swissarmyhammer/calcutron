@@ -1,12 +1,9 @@
 # Calcutron! 🤖
 
-This is a sample to show you how to use swissarmy hammer to do AI auto programming.
+This is a sample to show you how to use SwissArmyHammer to do AI auto programming.
 
-To get started you need:
+To get started you need Claude Code https://docs.anthropic.com/en/docs/claude-code/setup
 
-- To fork this repo
-- Install Claude Code https://docs.anthropic.com/en/docs/claude-code/setup
-- Install Swissarmyhammer https://github.com/swissarmyhammer/swissarmyhammer
 
 ## The Specification
 
@@ -29,6 +26,7 @@ Let's get this sample repo started.
 ```bash
 git clone git@github.com:swissarmyhammer/calcutron.git
 cd calcutron
+brew install swissarmyhammer/tap/swissarmyhammer-cli
 sah init
 sah doctor
 ```
@@ -58,6 +56,4 @@ Planning will look at a markdown file, digest it, and generate issues. Fire up C
 ```
 
 
-Tremble in AI fear...
-
-You are the proud owner of a calculator.
+You are the now proud owner of a calculator.
