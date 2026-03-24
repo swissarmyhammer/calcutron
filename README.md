@@ -57,3 +57,13 @@ Planning will look at a markdown file, digest it, and generate issues. Fire up C
 
 
 You are the now proud owner of a calculator.
+
+## Demo
+
+Watch the full workflow in action:
+
+![Demo](./demo.gif)
+
+The recording runs every step — `sah init`, `sah doctor`, then `claude -p` driving `/plan`, `/implement-loop`, `/review`, and `/test-loop` — building the entire calculator from the specification unattended.
+
+Replay in your terminal: `asciinema play demo.cast`
