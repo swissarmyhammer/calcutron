@@ -4,6 +4,11 @@ This is a sample to show you how to use SwissArmyHammer to do AI auto programmin
 
 To get started you need Claude Code https://docs.anthropic.com/en/docs/claude-code/setup
 
+## Demo
+
+Watch the full workflow in action:
+
+![Demo](./demo.gif)
 
 ## The Specification
 
@@ -58,11 +63,7 @@ Planning will look at a markdown file, digest it, and generate issues. Fire up C
 
 You are the now proud owner of a calculator.
 
-## Demo
 
-Watch the full workflow in action:
-
-![Demo](./demo.gif)
 
 The recording runs every step — `sah init`, `sah doctor`, then `claude -p` driving `/plan`, `/implement-loop`, `/review`, and `/test-loop` — building the entire calculator from the specification unattended.
 
