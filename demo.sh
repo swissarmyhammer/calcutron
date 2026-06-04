@@ -39,33 +39,13 @@ echo ""
 claude -p '/plan ./specification/index.md' --dangerously-skip-permissions
 sleep 2
 
-# ─── Step 4: First implement loop ────────────────────────────
+# ─── Step 4: Finish the plan ────────────────────────────
 banner "Step 4: /implement-loop — Build it"
-echo "Running: claude -p '/implement-loop'"
+echo "Running: claude -p '/finish'"
 echo ""
-claude -p '/implement-loop' --dangerously-skip-permissions
+claude -p '/finish' --dangerously-skip-permissions
 sleep 2
 
-# ─── Step 5: Review ──────────────────────────────────────────
-banner "Step 5: /review — Check the code"
-echo "Running: claude -p '/review'"
-echo ""
-claude -p '/review' --dangerously-skip-permissions
-sleep 2
-
-# ─── Step 6: Second implement loop ───────────────────────────
-banner "Step 6: /implement-loop — Address review feedback"
-echo "Running: claude -p '/implement-loop'"
-echo ""
-claude -p '/implement-loop' --dangerously-skip-permissions
-sleep 2
-
-# ─── Step 7: Test loop ───────────────────────────────────────
-banner "Step 7: /test-loop — Make sure all tests pass"
-echo "Running: claude -p '/test-loop'"
-echo ""
-claude -p '/test-loop' --dangerously-skip-permissions
-sleep 2
 
 # ─── Done ─────────────────────────────────────────────────────
 banner "Done! Let's see what we built"
