@@ -46,25 +46,10 @@ Planning will look at a markdown file, digest it, and generate issues. Fire up C
 /plan ./specification/index.md
 
 -- do the work
-/implement-loop
-
--- check it
-/review
-
--- do the work
-/implement-loop
-
-
--- make sure all test pass
-/test-loop
+/finish
 
 ```
 
 
 You are the now proud owner of a calculator.
 
-
-
-The recording runs every step — `sah init`, `sah doctor`, then `claude -p` driving `/plan`, `/implement-loop`, `/review`, and `/test-loop` — building the entire calculator from the specification unattended.
-
-Replay in your terminal: `asciinema play demo.cast`
