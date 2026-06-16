@@ -10,3 +10,4 @@ Cargo.lock
 .swissarmyhammer/mcp.log
 *.log
 
+benchmark-results/
