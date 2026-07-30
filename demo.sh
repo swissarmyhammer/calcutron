@@ -25,12 +25,12 @@ command -v jq >/dev/null 2>&1 || { echo "error: jq is required (brew install jq)
 # Runs claude in print/JSON mode, shows its final result text, and
 # prints that step's token usage (saved to $RESULTS_DIR/<name>.json).
 run_ai_step() {
-  local name="$1" prompt="$2"
+  local name="$1" prompt="$2" model="$3"
   local out="$RESULTS_DIR/${name}.json"
 
-  echo "Running: claude -p '$prompt'"
+  echo "'$prompt'"
   echo ""
-  claude -p "$prompt" --output-format json --dangerously-skip-permissions >"$out"
+  claude --model "$model" -p "$prompt" --output-format json --dangerously-skip-permissions >"$out"
 
   # Claude's final message, so the demo still shows the outcome.
   jq -r '.result // ""' "$out"
@@ -73,12 +73,12 @@ sleep 1
 
 # ─── Step 3: Plan from specification ─────────────────────────
 banner "Step 3: /plan — Create a plan from the specification"
-run_ai_step "plan" "/plan ./specification/index.md"
+run_ai_step "plan" "/plan ./specification/index.md" "opus"
 sleep 2
 
 # ─── Step 4: Finish the plan ────────────────────────────
 banner "Step 4: /implement-loop — Build it"
-run_ai_step "finish" "/finish"
+run_ai_step "finish" "/finish" "sonnet"
 sleep 2
 
 
